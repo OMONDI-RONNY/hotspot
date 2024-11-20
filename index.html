@@ -245,6 +245,23 @@
             </div>
         </div>
     </div>
+    <div style="margin-top: 30px; text-align: center;">
+        <h3>Already Paid?</h3>
+        <form onsubmit="handleMpesaCode(event)" style="display: inline-block; width: 100%; max-width: 500px; text-align: left;">
+            <label for="mpesa-code">Enter M-Pesa Code:</label>
+            <input 
+                type="text" 
+                id="mpesa-code" 
+                name="mpesa-code" 
+                class="input-field" 
+                placeholder="Enter your M-Pesa payment code" 
+                required 
+                style="margin-bottom: 10px; width: 100%;"
+            />
+            <button type="submit" class="btn" style="width: 100%;">Connect</button>
+        </form>
+    </div>
+</div>
 
     <!-- Modal for Basic Plan -->
     <div id="basic" class="modal">
