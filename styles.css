@@ -170,7 +170,7 @@ footer span {
     .card-container {
         flex-direction: column;
         align-items: center;
-        transform: translateX(10px);
+        transform: translateX(1px);
     }
 
     .card {
@@ -294,5 +294,5 @@ footer span {
 }
 
 .mpesa-section {
-    transform: translateX(15px);
+    transform: translateX(1px);
 }
