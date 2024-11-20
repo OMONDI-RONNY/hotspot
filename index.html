@@ -207,6 +207,73 @@
             width: 60%;
         }
 
+        .mpesa-form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    
+        .mpesa-form label {
+            font-size: 18px;
+            color: #333;
+        }
+    
+        .mpesa-form .input-field {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    
+        .mpesa-form .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        /* Adjustments for Smaller Screens */
+        @media (max-width: 768px) {
+            .mpesa-form {
+                max-width: 90%;
+            }
+    
+            .mpesa-form label {
+                font-size: 16px;
+            }
+    
+            .mpesa-form .input-field {
+                font-size: 14px;
+                padding: 10px;
+            }
+    
+            .mpesa-form .btn {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .mpesa-form label {
+                font-size: 14px;
+            }
+    
+            .mpesa-form .input-field {
+                font-size: 12px;
+                padding: 8px;
+            }
+    
+            .mpesa-form .btn {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
     </style>
 
 
@@ -247,7 +314,7 @@
     </div>
     <div style="margin-top: 30px; text-align: center;">
         <h3>Already Paid?</h3>
-        <form onsubmit="handleMpesaCode(event)" style="display: inline-block; width: 100%; max-width: 500px; text-align: left;">
+        <form onsubmit="handleMpesaCode(event)" class="mpesa-form">
             <label for="mpesa-code">Enter M-Pesa Code:</label>
             <input 
                 type="text" 
@@ -256,12 +323,12 @@
                 class="input-field" 
                 placeholder="Enter your M-Pesa payment code" 
                 required 
-                style="margin-bottom: 10px; width: 100%;"
             />
-            <button type="submit" class="btn" style="width: 100%;">Connect</button>
+            <button type="submit" class="btn">Connect</button>
         </form>
     </div>
 </div>
+
 
     <!-- Modal for Basic Plan -->
     <div id="basic" class="modal">
