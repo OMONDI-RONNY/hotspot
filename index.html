@@ -207,17 +207,33 @@
             width: 60%;
         }
 
+        .mpesa-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 20px;
+        }
+    
+        .mpesa-section h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    
         .mpesa-form {
+            width: 100%;
             max-width: 400px;
-            margin: 0 auto;
-            text-align: left;
             display: flex;
             flex-direction: column;
             gap: 15px;
+            align-items: center;
         }
     
         .mpesa-form label {
             font-size: 18px;
+            text-align: center;
             color: #333;
         }
     
@@ -228,6 +244,7 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             box-sizing: border-box;
+            text-align: center;
         }
     
         .mpesa-form .btn {
@@ -238,8 +255,12 @@
             cursor: pointer;
         }
     
-        /* Adjustments for Smaller Screens */
+        /* Adjustments for smaller screens */
         @media (max-width: 768px) {
+            .mpesa-section {
+                padding: 15px;
+            }
+    
             .mpesa-form {
                 max-width: 90%;
             }
@@ -312,7 +333,7 @@
             </div>
         </div>
     </div>
-    <div style="margin-top: 30px; text-align: center;">
+    <div class="mpesa-section">
         <h3>Already Paid?</h3>
         <form onsubmit="handleMpesaCode(event)" class="mpesa-form">
             <label for="mpesa-code">Enter M-Pesa Code:</label>
@@ -328,6 +349,7 @@
         </form>
     </div>
 </div>
+
 
 
     <!-- Modal for Basic Plan -->
